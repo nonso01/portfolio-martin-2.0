@@ -66,8 +66,8 @@ export default class About extends Component {
             </div>
 
             <div className="fx-cn-row" style={{ width: "100%" }}>
-              <Text type={"span"}  text="Download my resume" />
-              <Button text="Resume" clickEvent={this.handleResumeClick} />{" "}
+              <Text type={"span"} css={null} text="Download my resume" />
+              <Button text={<Icon url={iconUrl.downloadIcon}/>} clickEvent={this.handleResumeClick} />
             </div>
           </div>
 

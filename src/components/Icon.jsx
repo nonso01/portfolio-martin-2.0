@@ -22,6 +22,7 @@ import fontSizeIcon from "../../src/assets/icons/font-size-icon.svg";
 import volumeIcon from "../../src/assets/icons/volume-icon.svg";
 import searchCancelIcon from "../../src/assets/icons/search-cancel-icon.svg";
 import searchSendIcon from "../../src/assets/icons/search-send-icon.svg";
+import downloadIcon from '../../src/assets/icons/download-icon.svg'
 import myIcon from "../../src/assets/logos/logo-martin.svg";
 
 import { useState } from "react";
@@ -51,6 +52,7 @@ export const iconUrl = {
   volumeIcon,
   searchCancelIcon,
   searchSendIcon,
+  downloadIcon,
   myIcon,
 };
 
