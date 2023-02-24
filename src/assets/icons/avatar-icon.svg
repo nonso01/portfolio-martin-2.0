@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="50"
+   height="50"
+   viewBox="0 0 13.229166 13.229167"
+   version="1.1"
+   id="svg4543"
+   inkscape:version="0.92.1 r15371"
+   sodipodi:docname="avatar-logo.svg">
+ 
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-283.77081)">
+    <circle
+       style="fill:#212121;fill-opacity:1;fill-rule:evenodd;stroke-width:0.37947038"
+       id="path5088"
+       cx="6.7242846"
+       cy="287.76544"
+       r="2.6458333" />
+    <path
+       style="fill:#212121;fill-opacity:1;stroke:none;stroke-width:0.02352772"
+       d="m 2.3978771,295.9817 c 0.1206919,-1.38102 0.7068153,-2.63006 1.6809168,-3.58206 0.4458169,-0.43571 0.8732247,-0.74628 1.4156489,-1.02869 0.4053661,-0.21104 1.2077795,-0.50103 1.3863838,-0.50103 0.1659634,0 0.7804337,0.2108 1.217675,0.41773 0.9399068,0.44482 1.7285513,1.11361 2.3126684,1.96119 0.351875,0.51059 0.692333,1.29312 0.833068,1.91475 0.06431,0.28408 0.13375,0.7546 0.13375,0.90634 v 0.0917 H 6.8800743 2.3821576 Z"
+       id="path5114"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>

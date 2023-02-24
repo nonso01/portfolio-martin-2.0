@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="50"
+   height="50"
+   viewBox="0 0 13.229166 13.229167"
+   version="1.1"
+   id="svg7545"
+   inkscape:version="0.92.1 r15371"
+   sodipodi:docname="list-icon.svg">
+
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-283.77081)">
+    <circle
+       style="fill:#212121;fill-opacity:1;fill-rule:evenodd;stroke-width:0.26139373"
+       id="path8090"
+       cx="5"
+       cy="285.21469"
+       r="1.3229166" />
+    <circle
+       style="fill:#212121;fill-opacity:1;fill-rule:evenodd;stroke-width:0.26139373"
+       id="path8090-5"
+       cx="5"
+       cy="288.59003"
+       r="1.3229166" />
+    <circle
+       style="fill:#212121;fill-opacity:1;fill-rule:evenodd;stroke-width:0.26139373"
+       id="path8090-7"
+       cx="5"
+       cy="292.08627"
+       r="1.3229166" />
+    <circle
+       style="fill:#212121;fill-opacity:1;fill-rule:evenodd;stroke-width:0.26139373"
+       id="path8090-52"
+       cx="5"
+       cy="295.58255"
+       r="1.3229166" />
+  </g>
+</svg>

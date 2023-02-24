@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="50"
+   height="50"
+   viewBox="0 0 13.229166 13.229167"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.1 r15371"
+   sodipodi:docname="cross-icon.svg">
+ 
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-283.77081)">
+    <path
+       style="fill:#ff5a5a;fill-opacity:1;stroke:none;stroke-width:0.03340869"
+       d="m 3.6933673,294.5957 c -0.182852,-0.11461 -0.3300008,-0.2198 -0.3269972,-0.23375 0.003,-0.014 0.5717066,-0.88259 1.2637846,-1.93029 0.6920781,-1.04769 1.2510752,-1.92379 1.2422159,-1.94688 -0.00886,-0.0231 -0.5807856,-0.89715 -1.270947,-1.94237 l -1.2548391,-1.90039 0.3245448,-0.20918 c 0.1784996,-0.11505 0.3328509,-0.20954 0.343003,-0.20997 0.010152,-4.4e-4 0.5814403,0.87095 1.26953,1.93642 0.6880897,1.06546 1.2661061,1.93686 1.2844809,1.93644 0.018375,-4.3e-4 0.5956851,-0.87217 1.2829114,-1.93721 0.6872269,-1.06504 1.2548079,-1.93644 1.2612915,-1.93644 0.00648,0 0.1615678,0.0936 0.3446314,0.20804 0.3119756,0.195 0.3300606,0.21228 0.2884716,0.27562 -0.0244,0.0372 -0.5878945,0.89005 -1.2522016,1.8953 -0.6643068,1.00524 -1.2167049,1.85084 -1.2275515,1.8791 -0.012576,0.0328 0.4411798,0.74774 1.2523943,1.97335 l 1.2721158,1.92195 -0.2245708,0.14278 c -0.1235142,0.0785 -0.2775035,0.17497 -0.3421992,0.21433 l -0.1176279,0.0716 -1.2507108,-1.9357 c -0.6878912,-1.06463 -1.2673372,-1.9357 -1.2876577,-1.9357 -0.02032,0 -0.4865867,0.69532 -1.0361464,1.54516 -0.5495597,0.84983 -1.1131098,1.72089 -1.2523335,1.93568 l -0.2531343,0.39054 z"
+       id="path5815"
+       inkscape:connector-curvature="0" />
+    <rect
+       style="fill:none;fill-rule:evenodd;stroke-width:0.39687499;stroke:#ff5a5a;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:4.76249994,4.76249994;stroke-linecap:round;stroke-linejoin:round;stroke-dashoffset:0"
+       id="rect5817"
+       width="10.583333"
+       height="10.583333"
+       x="1.3363476"
+       y="285.00626"
+       ry="0.39687499" />
+  </g>
+</svg>

@@ -1,0 +1,12 @@
+
+  // [_width, _setWidth] = useState(w.innerWidth);
+
+// function getWidth() {
+  //   useEffect(() => {
+  //     let i = setInterval(() => {
+  //       _setWidth(w.innerWidth);
+  //     }, 0);
+  //     return () => clearInterval(i);
+  //   }, []);
+  //   return _width;
+  // }

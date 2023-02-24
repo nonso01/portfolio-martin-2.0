@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="50"
+   height="50"
+   viewBox="0 0 13.229166 13.229167"
+   version="1.1"
+   id="svg4503"
+   inkscape:version="0.92.1 r15371"
+   sodipodi:docname="facebook-logo.svg">
+ 
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-283.77081)">
+    <rect
+       style="fill:none;fill-rule:evenodd;stroke-width:0.39687499;stroke:#212121;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:4.76249994, 4.76249993999999970;stroke-dashoffset:0;stroke-linecap:round"
+       id="rect5048"
+       width="10.583333"
+       height="10.583333"
+       x="1.3063803"
+       y="285.19296"
+       ry="0.66145831" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:4.93888855px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
+       x="-1.3394531"
+       y="285.72211"
+       id="text5607"><tspan
+         sodipodi:role="line"
+         id="tspan5605"
+         x="-1.3394531"
+         y="290.228"
+         style="stroke-width:0.26458332" /></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.85916519px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#212121;fill-opacity:1;stroke:none;stroke-width:0.50902331;"
+       x="4.4270382"
+       y="296.53293"
+       id="text5611"
+       transform="scale(1.0062714,0.99376767)"><tspan
+         sodipodi:role="line"
+         id="tspan5609"
+         x="4.4270382"
+         y="296.53293"
+         style="stroke-width:0.50902331;fill:#212121;fill-opacity:1;">f</tspan></text>
+</g>
+</svg>

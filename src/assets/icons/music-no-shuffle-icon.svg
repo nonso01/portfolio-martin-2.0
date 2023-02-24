@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="50"
+   height="50"
+   viewBox="0 0 13.229166 13.229167"
+   version="1.1"
+   id="svg6319"
+   sodipodi:docname="music-no-shuffle-icon.svg"
+   inkscape:version="0.92.1 r15371">
+ 
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-283.77081)">
+    <path
+       style="fill:none;stroke:#212121;stroke-width:0.78554958;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 2.5117232,287.94499 c -0.3650383,0.3895 -0.7303743,0.77932 -0.8578088,1.55193 -0.1274345,0.7726 -0.016814,1.92616 1.5973174,2.44732 1.6141319,0.52115 4.7297359,0.40874 7.8458852,0.2963"
+       id="path6904"
+       inkscape:connector-curvature="0"
+       inkscape:path-effect="#path-effect6906"
+       inkscape:original-d="m 2.5117232,287.94499 c -0.3650729,0.38947 -0.7304089,0.77929 -1.0960079,1.16946 0.1110589,1.15504 0.2216788,2.3086 0.3321237,3.46343 3.1175123,-0.11283 6.2331158,-0.22526 9.349278,-0.33734"
+       sodipodi:nodetypes="cccc" />
+    <path
+       style="fill:none;stroke:#212121;stroke-width:0.78554958;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 2.5117232,287.94499 c 0.221753,-0.16518 0.4431654,-0.3301 1.7588455,-0.39748 1.3156801,-0.0674 3.7325234,-0.0374 5.059764,-0.0198 1.3272403,0.0176 1.5683693,0.0227 1.6785733,0.27169 0.110205,0.24896 0.08974,0.74187 0.08542,1.18534 -0.0043,0.44348 0.0075,0.83677 0.0194,1.2306"
+       id="path6908"
+       inkscape:connector-curvature="0"
+       inkscape:path-effect="#path-effect6910"
+       inkscape:original-d="m 2.5117232,287.94499 c 0.2216769,-0.16528 0.4430925,-0.3302 0.6642471,-0.49478 2.4102826,0.0296 4.827126,0.0596 7.2402947,0.0899 0.241312,0.005 0.482466,0.009 0.723304,0.0155 -0.02021,0.49276 -0.04068,0.98567 -0.06142,1.47933 0.01213,0.39327 0.02398,0.78656 0.03557,1.1804"
+       sodipodi:nodetypes="cccccc" />
+    <path
+       style="fill:none;stroke:#212121;stroke-width:0.78554958;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 10.040698,288.66324 c 0.0469,0.0741 0.09385,0.14829 0.258301,0.41873 0.164449,0.27043 0.446153,0.73672 0.606638,1.00707 0.160486,0.27035 0.199607,0.34453 0.391707,0.0685 0.1921,-0.27604 0.53623,-0.90098 0.880461,-1.5261"
+       id="path6912"
+       inkscape:connector-curvature="0"
+       inkscape:path-effect="#path-effect6914"
+       inkscape:original-d="m 10.040698,288.66324 c 0.04723,0.0739 0.0942,0.14807 0.140908,0.22264 0.28219,0.46631 0.563895,0.9326 0.845448,1.39943 0.03941,0.0739 0.07855,0.14807 0.117423,0.22265 0.34502,-0.62643 0.689148,-1.25137 1.033328,-1.87652" />
+  </g>
+</svg>
