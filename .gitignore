@@ -24,7 +24,7 @@ scss
 *.sw?
 *.map
 *.ttf
-# *.mp3
+*.mp3
 *.mp4
 # package*
 # vite.config*
