@@ -92,9 +92,9 @@ export default function Panel({ hide }) {
             <input
               type="range"
               name="panel-range"
-              min={"0.5"}
-              max={"1.5"}
-              step={"0.05"}
+              min={"0.7"}
+              max={"1.3"}
+              step={"0.065"}
               defaultValue={"1"}
             />
           </div>

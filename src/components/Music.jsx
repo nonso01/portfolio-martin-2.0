@@ -30,15 +30,13 @@ export default function Music({ hide }) {
     [showMenu, setShowMenu] = useState(false),
     [prevNext, setPrevNext] = useState(0);
 
-
-      /**
+  /**
    * experimental fetching
    */
   // let [data, setData] = useState(null),
   //   [loading, setLoading] = useState(true),
   //   [error, setError] = useState(null);
 
-  
   /**
      * the actual fetch
      * 
@@ -55,8 +53,6 @@ fetch('https://deezerdevs-deezer.p.rapidapi.com/search?q=eminem', options)
 	.then(response => console.log(response))
 	.catch(err => console.error(err));
      */
-
-
 
   function handleClick(e) {
     e.stopPropagation();
@@ -105,7 +101,7 @@ fetch('https://deezerdevs-deezer.p.rapidapi.com/search?q=eminem', options)
     <div
       className={hide ? hide + " music-app rad-25" : "music-app rad-25"}
       onClick={handleClick}
-      data-matin-app="music"
+      data-martin-app="music"
     >
       <div className="like fx-cn-row">
         <Icon url={iconUrl.smallArrowIcon} data_x={"minimize"} />

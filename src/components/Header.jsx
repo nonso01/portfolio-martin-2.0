@@ -71,12 +71,10 @@ export default function Header({ getWidth }) {
     }
   }
 
-  if (getWidth >= screenSizes.medium && showNav === true) {
-    setShowNav(!showNav);
-    /**
-     * testing this logic to avoid unwanted behavior
-     */
-  }
+  if (getWidth >= screenSizes.medium && showNav === true) setShowNav(!showNav);
+  /**
+   * testing this logic to avoid unwanted behavior
+   */
 
   return (
     <div
