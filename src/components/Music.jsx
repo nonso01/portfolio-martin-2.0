@@ -30,23 +30,33 @@ export default function Music({ hide }) {
     [showMenu, setShowMenu] = useState(false),
     [prevNext, setPrevNext] = useState(0);
 
-  /**
+
+      /**
    * experimental fetching
    */
   // let [data, setData] = useState(null),
   //   [loading, setLoading] = useState(true),
   //   [error, setError] = useState(null);
 
-  // useEffect(() => {
-  //   fetch("../../data.json")
-  //     .then((res) => res.json())
-  //     .then((val) => {
-  //       // log(val);
-  //       setLoad(!load);
-  //       setData(val?.data);
-  //     })
-  //     .catch((err) => log(err));
-  // }, []);
+  
+  /**
+     * the actual fetch
+     * 
+     * const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': 'e74a31b576mshde4a9f9d59f11f2p1f887fjsnaba3fef7c71b',
+		'X-RapidAPI-Host': 'deezerdevs-deezer.p.rapidapi.com'
+	}
+};
+
+fetch('https://deezerdevs-deezer.p.rapidapi.com/search?q=eminem', options)
+	.then(response => response.json())
+	.then(response => console.log(response))
+	.catch(err => console.error(err));
+     */
+
+
 
   function handleClick(e) {
     e.stopPropagation();
@@ -162,7 +172,6 @@ function Aside({ hideAside, onInput }) {
       }
       onInput={onInput}
     >
-      
       <div>
         <input type="search" placeholder="search Artist" />
       </div>
