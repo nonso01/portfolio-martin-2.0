@@ -20,12 +20,12 @@ import theMusic from "../../Ariana Grande - positions.mp3";
 const audioEl = d.createElement("audio");
 audioEl.src = theMusic;
 
-let audioContext = new AudioContext(),
+const audioContext = new AudioContext(),
   track = audioContext.createMediaElementSource(audioEl);
 track.connect(audioContext.destination);
 
 export default function Music({ hide }) {
-  let [shuffle, setShuffle] = useState(false),
+  const [shuffle, setShuffle] = useState(false),
     [playBool, setPlayBool] = useState(false),
     [showMenu, setShowMenu] = useState(false),
     [prevNext, setPrevNext] = useState(0);
@@ -87,7 +87,7 @@ fetch('https://deezerdevs-deezer.p.rapidapi.com/search?q=eminem', options)
 
   function handleInput(e) {
     e.stopPropagation();
-    let _t = e.target,
+    const _t = e.target,
       val = _t.value;
 
     log(val);

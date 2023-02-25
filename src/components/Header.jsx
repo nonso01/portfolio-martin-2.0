@@ -7,8 +7,10 @@ import Button, { w, log, d, screenSizes } from "./Button";
 import Panel from "./Panel";
 import Music from "./Music";
 
+const ONESECOND = 1000;
+
 export default function Header({ getWidth }) {
-  let [showMusicApp, setShowMusicApp] = useState(false),
+  const [showMusicApp, setShowMusicApp] = useState(false),
     [showTime, setShowTime] = useState(false),
     [showPanel, setShowPanel] = useState(false),
     [showNav, setShowNav] = useState(false);
@@ -54,6 +56,12 @@ export default function Header({ getWidth }) {
           break;
         case "menu":
           setShowNav(!showNav);
+          break;
+        case "time":
+          setShowTime(!showTime);
+          break;
+        default:
+          void 0;
           break;
       }
     } else if (!datasetX) {
@@ -122,6 +130,7 @@ export default function Header({ getWidth }) {
 
       {showMusicApp ? <Music /> : <Music hide={"hide important"} />}
       {showPanel ? <Panel /> : <Panel hide={"hide important"} />}
+      {showTime ? <Clock showClock={showTime} /> : void 0}
     </div>
   );
 }
@@ -144,4 +153,25 @@ function NavIcon({ showNav }) {
       </div>
     </div>
   );
+}
+
+export function Clock({ showClock }) {
+  const [time, setTime] = useState(() => new Date());
+
+  useEffect(() => {
+    const i = setInterval(() => setTime(() => new Date()), ONESECOND);
+    return () => clearInterval(i);
+  }, []);
+
+  if (showClock)
+    return (
+      <div className="clock rad-5 fx-cn-col">
+        <Text
+          type={"span"}
+          css="title dark mid"
+          text={time.toLocaleTimeString()}
+        />
+      </div>
+    );
+  return null;
 }
