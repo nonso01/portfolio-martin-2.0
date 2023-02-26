@@ -15,7 +15,7 @@ import Button, { d, log, w } from "./Button";
 import Text from "./Text";
 
 import IllustrationMusicBar from "../../src/assets/images/illustration-music-bar.png";
-import theMusic from "../../Ariana Grande - positions.mp3";
+import theMusic from "../../jim_yosef_eclipse_ncs_release_mp3_58337.mp3";
 
 const audioEl = d.createElement("audio");
 audioEl.src = theMusic;
@@ -25,7 +25,7 @@ const audioContext = new AudioContext(),
 track.connect(audioContext.destination);
 
 export default function Music({ hide }) {
-  const [shuffle, setShuffle] = useState(false),
+  let [shuffle, setShuffle] = useState(false),
     [playBool, setPlayBool] = useState(false),
     [showMenu, setShowMenu] = useState(false),
     [prevNext, setPrevNext] = useState(0);

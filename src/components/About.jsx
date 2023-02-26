@@ -1,15 +1,29 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect, Component } from "react";
+import Text from "./Text";
+import Button, { log, d } from "./Button";
+import Icon, { iconUrl } from "./Icon";
+import Link from "./Link";
 
-export default class About extends React.Component {
+export default class About extends Component {
   constructor(props) {
     super(props);
-    this.props = props;
 
+    this.state = {
+      a: "hello world",
+    };
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick() {
+    this.setState({ a: "hello react" });
+  }
+
+
+  render() {
     return (
-      <div className="about" data-martin-app="about">
-        jvhgjksgfdjshgfjhsdjdsafj
+      <div className="about" data-martin-app="about" onClick={this.handleClick}>
+        <h1>{this.state.a}</h1>
       </div>
     );
   }
 }
-

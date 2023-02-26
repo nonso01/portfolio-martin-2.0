@@ -1,17 +1,17 @@
+import { Component } from "react";
 import Button, { log } from "./Button";
 import Text from "./Text";
 
-export default function Contact({ action }) {
-  return (
-    <div className="contact">
-      <form
-        action={action}
-        method="POST"
-        data-martin-app="contact"
-        onSubmit={userIsSubmiting}
-      ></form>
-    </div>
-  );
-}
+export default class Contact extends Component {
+  constructor(props) {
+    super(props);
+  }
 
-function userIsSubmiting() {}
+  render() {
+    return (
+      <div className="contact" data-martin-app="contact">
+        <form action="" method="POST"></form>
+      </div>
+    );
+  }
+}

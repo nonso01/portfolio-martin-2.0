@@ -7,7 +7,7 @@ import Button, { w, log, d } from "./components/Button";
 import Header from "./components/Header";
 import Music from "./components/Music";
 import Panel from "./components/Panel";
-// import About from "./components/About";
+import About from "./components/About";
 
 export const scrolledElement = {};
 
@@ -25,6 +25,7 @@ export default function App() {
   return (
     <>
       <Header getWidth={getWidth()} />
+      <About />
     </>
   );
 }
@@ -55,4 +56,3 @@ function getRect(input = "") {
 w.onscroll = function (e) {
   watchForScroll(scrolledElement);
 };
-
