@@ -14,7 +14,7 @@ import Icon, { iconUrl, HeartIcon } from "./Icon";
 import Button, { d, log, w } from "./Button";
 import Text from "./Text";
 
-import IllustrationMusicBar from "../../src/assets/images/illustration-music-bar.png";
+import illustrationMusicBar from "../../src/assets/images/illustration-music-bar.png";
 import theMusic from "../../jim_yosef_eclipse_ncs_release_mp3_58337.mp3";
 
 const audioEl = d.createElement("audio");
@@ -124,7 +124,7 @@ fetch('https://deezerdevs-deezer.p.rapidapi.com/search?q=eminem', options)
 
       <div className="play">
         <div className="audio-bar">
-          <img src={IllustrationMusicBar} />
+          <img src={illustrationMusicBar} />
         </div>
         <div className="controls fx-cn-row">
           <Icon
