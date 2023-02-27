@@ -21,15 +21,18 @@ const audioEl = d.createElement("audio");
 audioEl.src = theMusic;
 
 const audioContext = new AudioContext(),
+  gainNode = audioContext.createGain(),
   track = audioContext.createMediaElementSource(audioEl);
-track.connect(audioContext.destination);
 
 export default function Music({ hide }) {
+  const musicEffect = useEffect(() => {
+    track.connect(gainNode).connect(audioContext.destination);
+  });
+
   let [shuffle, setShuffle] = useState(false),
-    [playBool, setPlayBool] = useState(false),
+    [play, setPlay] = useState(false),
     [showMenu, setShowMenu] = useState(false),
     [prevNext, setPrevNext] = useState(0);
-
   /**
    * experimental fetching
    */
@@ -60,9 +63,9 @@ fetch('https://deezerdevs-deezer.p.rapidapi.com/search?q=eminem', options)
     if (e.target.dataset.x) {
       switch (e.target?.alt) {
         case "start":
-          setPlayBool(!playBool);
+          setPlay(!play);
           audioContext.state === "suspended" ? audioContext.resume() : void 0;
-          playBool ? audioEl.pause() : audioEl.play();
+          play ? audioEl.pause() : audioEl.play();
           break;
         case "shuffling":
           setShuffle(!shuffle);
@@ -88,13 +91,23 @@ fetch('https://deezerdevs-deezer.p.rapidapi.com/search?q=eminem', options)
   function handleInput(e) {
     e.stopPropagation();
     const _t = e.target,
-      val = _t.value;
+      val = _t.value,
+      type = _t.type;
 
-    log(val);
+    if (type) {
+      switch (type) {
+        case "range":
+          gainNode.gain.value = val;
+          break;
+        default:
+          log(val);
+          break;
+      }
+    }
   }
 
   audioEl.onended = function (e) {
-    setPlayBool(!playBool);
+    setPlay(!play);
   };
 
   return (
@@ -105,13 +118,13 @@ fetch('https://deezerdevs-deezer.p.rapidapi.com/search?q=eminem', options)
     >
       <div className="like fx-cn-row">
         <Icon url={iconUrl.smallArrowIcon} data_x={"minimize"} />
-        <Text type={"span"} text={playBool ? "now playing :)" : "silence :("} />
+        <Text type={"span"} text={play ? "now playing :)" : "silence :("} />
         <HeartIcon />
       </div>
 
       <div className="info">
         <div className="avatar rad-25">
-          <img src={iconUrl.avatarIcon} alt={"spotifi"} />
+          <img src={iconUrl.avatarIcon} alt={"artist img"} />
         </div>
 
         <div className="albulm txt-cn">
@@ -140,8 +153,8 @@ fetch('https://deezerdevs-deezer.p.rapidapi.com/search?q=eminem', options)
             alt="previous"
           />
           <Icon
-            url={playBool ? iconUrl.musicStartIcon : iconUrl.musicStopIcon}
-            data_x={playBool ? "start" : "stop"}
+            url={play ? iconUrl.musicStartIcon : iconUrl.musicStopIcon}
+            data_x={play ? "start" : "stop"}
             alt="start"
           />
           <Icon url={iconUrl.musicNextIcon} data_x={"next"} alt="next" />
@@ -169,17 +182,17 @@ function Aside({ hideAside, onInput }) {
       onInput={onInput}
     >
       <div>
-        <input type="search" placeholder="search Artist" />
+        <input type="search" results={"5"} placeholder="search Artist" />
       </div>
 
       <div className="child fx-cn-row">
         <Icon url={iconUrl.volumeIcon} />
         <input
           type="range"
-          max={"1"}
+          max={"5"}
           min={"0"}
-          step={"0.05"}
-          defaultValue={"0.25"}
+          step={"0.25"}
+          defaultValue={"1"}
         />
       </div>
 

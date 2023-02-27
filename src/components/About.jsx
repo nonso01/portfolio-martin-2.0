@@ -4,7 +4,6 @@ import Button, { log, d } from "./Button";
 import Icon, { iconUrl } from "./Icon";
 import Link from "./Link";
 
-// import illustrationPc from "../../src/assets/images/illustration-pc.svg";
 
 export default class About extends Component {
   constructor(props) {
@@ -20,6 +19,9 @@ export default class About extends Component {
     this.setState({ a: "hello react" });
   }
 
+  componentDidMount() {
+    // log(gsap)
+  }
   render() {
     return (
       <div
@@ -27,8 +29,7 @@ export default class About extends Component {
         data-martin-app="about"
         onClick={this.handleClick}
       >
-        <Text type={'h2'} css="title big" text="What about me."/>
-        <Button />
+        <Text type={'h2'} css="title big" text="What about me ?"/>
       </div>
     );
   }
