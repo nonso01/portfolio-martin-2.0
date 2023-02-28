@@ -25,7 +25,7 @@ export default function App() {
   return (
     <>
       <Header getWidth={getWidth()} />
-      {/* <About /> */}
+      <About />
     </>
   );
 }

@@ -4,32 +4,37 @@ import Button, { log, d } from "./Button";
 import Icon, { iconUrl } from "./Icon";
 import Link from "./Link";
 
+import { gsap } from "gsap";
+import nonso01Image from "../../src/assets/images/nonso01-image.png";
 
 export default class About extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      a: "hello world",
-    };
+    this.state = {};
     this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick() {
-    this.setState({ a: "hello react" });
-  }
+  handleClick() {}
 
   componentDidMount() {
-    // log(gsap)
+    gsap.to(".desc", {
+      x: 200,
+      delay: 3
+    });
   }
+
+  componentDidUpdate() {}
+
   render() {
     return (
-      <div
-        className="about"
-        data-martin-app="about"
-        onClick={this.handleClick}
-      >
-        <Text type={'h2'} css="title big" text="What about me ?"/>
+      <div className="about" data-martin-app="about" onClick={this.handleClick}>
+        <div className="nonso-image">
+          <img src={nonso01Image} alt="nonso01" loading="lazy" />
+        </div>
+        <div className="desc">
+          <Text type={"h2"} css="title big txt-cn" text="who am i ?" />
+        </div>
       </div>
     );
   }
