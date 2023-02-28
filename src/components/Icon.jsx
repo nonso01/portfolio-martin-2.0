@@ -20,8 +20,10 @@ import musicShuffleIcon from "../../src/assets/icons/music-shuffle-icon.svg";
 import musicNoShuffleIcon from "../../src/assets/icons/music-no-shuffle-icon.svg";
 import fontSizeIcon from "../../src/assets/icons/font-size-icon.svg";
 import volumeIcon from "../../src/assets/icons/volume-icon.svg";
-
+import searchCancelIcon from "../../src/assets/icons/search-cancel-icon.svg";
+import searchSendIcon from "../../src/assets/icons/search-send-icon.svg";
 import myIcon from "../../src/assets/logos/logo-martin.svg";
+
 import { useState } from "react";
 
 export const iconUrl = {
@@ -47,6 +49,8 @@ export const iconUrl = {
   musicNoShuffleIcon,
   fontSizeIcon,
   volumeIcon,
+  searchCancelIcon,
+  searchSendIcon,
   myIcon,
 };
 

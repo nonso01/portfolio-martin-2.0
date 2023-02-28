@@ -6,10 +6,10 @@
  audio graph concept  test for browser compatibility
  web Audio API
  - useEffect is the way to go for fetching data
- - now takle the issues on audioContext
+ - now takle the issues on audioContext.createMediaElementSource
  */
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef, useLayoutEffect } from "react";
 import Icon, { iconUrl, HeartIcon } from "./Icon";
 import Button, { d, log, w } from "./Button";
 import Text from "./Text";
@@ -17,28 +17,19 @@ import Text from "./Text";
 import illustrationMusicBar from "../../src/assets/images/illustration-music-bar.png";
 import theMusic from "../../jim_yosef_eclipse_ncs_release_mp3_58337.mp3";
 
-const audioEl = d.createElement("audio");
-audioEl.src = theMusic;
-
-const audioContext = new AudioContext(),
+const audioEl = d.createElement("audio"),
+  audioContext = new AudioContext(),
   gainNode = audioContext.createGain(),
   track = audioContext.createMediaElementSource(audioEl);
 
 export default function Music({ hide }) {
-  const musicEffect = useEffect(() => {
-    track.connect(gainNode).connect(audioContext.destination);
-  });
-
-  let [shuffle, setShuffle] = useState(false),
-    [play, setPlay] = useState(false),
-    [showMenu, setShowMenu] = useState(false),
-    [prevNext, setPrevNext] = useState(0);
+  const [musicTrack, setMusicTrack] = useState(() => theMusic);
   /**
-   * experimental fetching
-   */
-  // let [data, setData] = useState(null),
-  //   [loading, setLoading] = useState(true),
-  //   [error, setError] = useState(null);
+   experimental fetching
+   
+ let [data, setData] = useState(null),
+   [loading, setLoading] = useState(true),
+   [error, setError] = useState(null);
 
   /**
      * the actual fetch
@@ -56,6 +47,16 @@ fetch('https://deezerdevs-deezer.p.rapidapi.com/search?q=eminem', options)
 	.then(response => console.log(response))
 	.catch(err => console.error(err));
      */
+
+  const musicLayoutEffect = useLayoutEffect(() => {
+    audioEl.src = musicTrack;
+    track.connect(gainNode).connect(audioContext.destination);
+  }, []);
+
+  let [shuffle, setShuffle] = useState(false),
+    [play, setPlay] = useState(false),
+    [showMenu, setShowMenu] = useState(false),
+    [prevNext, setPrevNext] = useState(0);
 
   function handleClick(e) {
     e.stopPropagation();
@@ -181,8 +182,9 @@ function Aside({ hideAside, onInput }) {
       }
       onInput={onInput}
     >
-      <div>
+      <div className="fx-cn-row">
         <input type="search" results={"5"} placeholder="search Artist" />
+        <Icon url={iconUrl.searchSendIcon}  />
       </div>
 
       <div className="child fx-cn-row">
@@ -200,3 +202,30 @@ function Aside({ hideAside, onInput }) {
     </div>
   );
 }
+
+// {
+//   /**
+//    * to change track using the web audio api  , you create an AudioBufferSourceNode and load
+//    * a new audio buffer in to it.
+//    *
+//    */
+
+//   const ctx = new AudioContext(),
+//     audioSource = ctx.createBufferSource();
+
+//   function loadNewTrack(url) {
+//     fetch(url)
+//       .then((res) => res.arrayBuffer())
+//       .then((arrayBuffer) => ctx.decodeAudioData(arrayBuffer))
+//       .then((audioBuffer) => {
+//         audioSource.buffer = audioBuffer;
+//         audioSource.start();
+//         log(audioBuffer);
+//       });
+//   }
+
+//   loadNewTrack(theMusic);
+//   setTimeout(() => {
+//     loadNewTrack(/**new track */);
+//   }, 3000);
+// }
