@@ -183,8 +183,8 @@ function Aside({ hideAside, onInput }) {
       onInput={onInput}
     >
       <div className="fx-cn-row">
+        <Icon url={iconUrl.searchSendIcon} />
         <input type="search" results={"5"} placeholder="search Artist" />
-        <Icon url={iconUrl.searchSendIcon}  />
       </div>
 
       <div className="child fx-cn-row">
