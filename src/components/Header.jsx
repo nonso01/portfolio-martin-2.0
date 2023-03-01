@@ -119,11 +119,11 @@ export default function Header({ getWidth }) {
         <Text
           type={"h1"}
           text="Hello guys, Am MARTIN."
-          css="title bigest txt-cn"
+          css="title bigest txt cn"
         />
         <Text
           type={"p"}
-          css="text txt-cn"
+          css="text txt cn"
           text="Hey, thanks for clicking the link that redirected you to my site, Well am another Web addict, am talking of Web 4.0 xD, if you want to know who i am, what i do, why i still use facebook and  why i should be your team mate, or that missing dev you've been looking for! dude just browse my site :) ."
         />
       </div>

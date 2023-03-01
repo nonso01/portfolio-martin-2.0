@@ -11,17 +11,21 @@ export default class About extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {};
+    this.state = {
+      expandText: false,
+    };
     this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick() {}
 
   componentDidMount() {
-    gsap.to(".desc", {
-      x: 200,
-      delay: 3
-    });
+    // gsap.to(".desc", {
+    //   x: 250,
+    //   repeat: 10,
+    //   yoyo: true,
+    //   delay: 3,
+    // });
   }
 
   componentDidUpdate() {}
@@ -32,8 +36,11 @@ export default class About extends Component {
         <div className="nonso-image">
           <img src={nonso01Image} alt="nonso01" loading="lazy" />
         </div>
-        <div className="desc">
-          <Text type={"h2"} css="title big txt-cn" text="who am i ?" />
+        <Text type={"h2"} css="title big txt cn" text="~$ whoami" />
+
+        <div className="desc rad-10">
+          <div className="words rad-10"></div>
+          <div className="tech-stack rad-5"></div>
         </div>
       </div>
     );
