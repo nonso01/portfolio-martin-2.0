@@ -104,7 +104,7 @@ export default function Panel({ hide }) {
             <Text
               type={"p"}
               text="I walk around like Everything is fine but deep down. inside my shoe, my sock is sliding off :) ."
-              css="text sm"
+              css="text sm txt cn"
             />
           </div>
         </div>

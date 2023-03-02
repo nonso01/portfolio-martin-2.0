@@ -6,12 +6,12 @@ export const screenSizes = {
   small: 768,
 };
 
-function Button({ text = "button", css = "btn", clickEvent }) {
+export default function Button({ text = "button", css, clickEvent }) {
   return (
-    <button className={css} onClick={clickEvent}>
+    <button className={css ? css : "btn"} onClick={clickEvent}>
       {text}
     </button>
   );
 }
 
-export default Button;
+

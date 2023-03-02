@@ -107,6 +107,20 @@ fetch('https://deezerdevs-deezer.p.rapidapi.com/search?q=eminem', options)
     }
   }
 
+  function handleMouseMove(e) {
+    let _t = e.target,
+      dataSkew = _t?.dataset.skewEffect,
+      _x = e.clientX,
+      _y = e.clientY,
+      _h = dataSkew ? _t.clientHeight : 0,
+      _w = _h > 0 ? _t.clientWidth : 0,
+      diffX = _h > 0 && _x > _w ? _x - _w : _h > 0 && _x < _w ? _w - _x : 0,
+      diffY = _h > 0 && _y > _h ? _y - _h : _h > 0 && _y < _h ? _h - _y : 0,
+      a = Math.sin(diffX);
+
+    // log({ diffX, _x, _w, a });
+  }
+
   audioEl.onended = function (e) {
     setPlay(!play);
   };
@@ -115,7 +129,9 @@ fetch('https://deezerdevs-deezer.p.rapidapi.com/search?q=eminem', options)
     <div
       className={hide ? hide + " music-app rad-25" : "music-app rad-25"}
       onClick={handleClick}
+      onMouseMove={handleMouseMove}
       data-martin-app="music"
+      data-skew-effect="effect"
     >
       <div className="like fx-cn-row">
         <Icon url={iconUrl.smallArrowIcon} data_x={"minimize"} />
@@ -130,7 +146,7 @@ fetch('https://deezerdevs-deezer.p.rapidapi.com/search?q=eminem', options)
 
         <div className="albulm txt-cn">
           <Text type={"h3"} css="title mid dark" text={"Music App"} />
-          <Text type={"p"} text={"loading..."} />
+          <Text type={"p"} css="text txt cn" text={"loading..."} />
           {/* {load && <Text type={"p"} text={"loading..."} />}
           {!load && <Text type={"p"} text={data[prevNext]?.name} />} */}
         </div>
