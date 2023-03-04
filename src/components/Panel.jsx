@@ -16,7 +16,23 @@ export default function Panel({ hide }) {
     if (type) {
       switch (type) {
         case "radio":
-          log(_t.dataset.fontFamily);
+          // log(_t.dataset.fontFamily);
+          let _a = _t.dataset.fontFamily,
+            _b,
+            _c;
+
+          if (_a === "KR") {
+            _b = "Kanit";
+            _c = "Rubik Distressed";
+          } else if (_a === "OT") {
+            _b = "monospace";
+            _c = "sans-serif";
+          } else if (_a === "TF") {
+            _b = "Geogia";
+            _c = "Ariel";
+          }
+          d.documentElement.style.setProperty("--font-text", _b);
+          d.documentElement.style.setProperty("--font-title", _c);
           break;
         case "range":
           d.documentElement.style.setProperty("--adjust-font-size", `${val}`);
@@ -32,9 +48,9 @@ export default function Panel({ hide }) {
   function handleDoubleClick() {}
 
   const radioInput = [
-    { key: 0, font: "Kanit - RubikD", checked: true },
-    { key: 1, font: "one - two", checked: false },
-    { key: 2, font: "tree - four", checked: false },
+    { key: 0, font: "KR", fonttName: "Kanit - RubikD", checked: true },
+    { key: 1, font: "OT", fonttName: "one - two", checked: false },
+    { key: 2, font: "TF", fonttName: "tree - four", checked: false },
   ].map((data, i) => (
     <label key={data.key} className="fx-btn-row">
       <input
@@ -44,7 +60,7 @@ export default function Panel({ hide }) {
         defaultChecked={data.checked}
       />
 
-      <Text type={"span"} text={data.font} />
+      <Text type={"span"} text={data.fonttName} />
     </label>
   ));
 
@@ -86,7 +102,7 @@ export default function Panel({ hide }) {
 
       <div className="control rad-10 txt-cn">
         <div className="child one">
-          <Text type={"h4"} text="Font" />
+          <Text type={"h4"} text="Font" css="text cn txt" />
           <div className="fx-cn-row one">
             <Icon url={iconUrl.fontSizeIcon} />
             <input
@@ -110,7 +126,7 @@ export default function Panel({ hide }) {
         </div>
 
         <div className="child two">
-          <Text type={"h4"} text="Re Build" />
+          <Text type={"h4"} text="Re Build" css="text cn txt" />
           <Text
             type={"code"}
             text={
@@ -128,7 +144,7 @@ export default function Panel({ hide }) {
         </div>
 
         <div className="child tree">
-          <Text type={"h4"} text="Themes" />
+          <Text type={"h4"} text="Themes" css="text cn txt" />
 
           <div className="themes">{themePreference}</div>
         </div>

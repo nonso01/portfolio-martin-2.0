@@ -48,7 +48,7 @@ export default class About extends Component {
           <div className="whoami rad-10">
             <Text
               type={"p"}
-              css="text txt l"
+              css="text txt cn"
               text={`Alright, my name is Chukwunonso Martin and i'm frontend dev just like the majority of you, with dreams of becoming a Medical Doctor, while working in an IT related field. Currently i have been working with a handfull of technologies , and as well learning each of them carefully , till am able to create satisfying softwares from it, Just like #EVAN YU. But before then let me focus on what's in front,  by building things out of the box and  doing things i luv. I have  #3 years of experience in frontend development working extensively With any thing related to  #JAVASCRIPT, when i say  (anything)  i mean the onens on that image. Along side Shell scripting , yeah am into linux stuff too, not only that i have been interested in C,  nothing more pleasant than understanding the components of a machine, hope i won't be savaged by pointers and uncountable data types.`}
             />
 
