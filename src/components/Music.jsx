@@ -134,7 +134,7 @@ fetch('https://deezerdevs-deezer.p.rapidapi.com/search?q=eminem', options)
       data-skew-effect="effect"
     >
       <div className="like fx-cn-row">
-        <Icon url={iconUrl.smallArrowIcon} data_x={"minimize"} />
+        <Icon url={iconUrl.smallArrowIcon} data_x={"..."} />
         <Text type={"span"} text={play ? "now playing :)" : "silence :("} />
         <HeartIcon />
       </div>

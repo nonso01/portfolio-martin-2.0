@@ -1,7 +1,7 @@
 import { useState, useEffect, Component } from "react";
 import Text from "./Text";
 import Button, { log, d } from "./Button";
-import Icon, { iconUrl } from "./Icon";
+import Icon, { iconUrl, DownloadIcon } from "./Icon";
 import Link from "./Link";
 
 // import { gsap } from "gsap";
@@ -13,6 +13,7 @@ export default class About extends Component {
 
     this.state = {
       expandText: false,
+      downloading: false,
     };
     this.handleClick = this.handleClick.bind(this);
     this.handleResumeClick = this.handleResumeClick.bind(this);
@@ -21,8 +22,10 @@ export default class About extends Component {
 
   handleClick() {}
 
-  handleResumeClick() {
-    log("resume");
+  handleResumeClick(e) {
+    e.preventDefault();
+    this.setState({ downloading: !this.state.downloading });
+    log("resume!!");
   }
   handleMouseMove() {}
   componentDidMount() {
@@ -42,7 +45,7 @@ export default class About extends Component {
         <div className="nonso-image">
           <img src={nonso01Image} alt="nonso01" loading="lazy" />
         </div>
-        <Text type={"h2"} css="title big txt cn" text="~$ whoami" />
+        <Text type={"h2"} css="title big txt cn" text="~$ echo" />
 
         <div className="desc rad-10">
           <div className="whoami rad-10">
@@ -67,7 +70,10 @@ export default class About extends Component {
 
             <div className="fx-cn-row" style={{ width: "100%" }}>
               <Text type={"span"} css={null} text="Download my resume" />
-              <Button text={<Icon url={iconUrl.downloadIcon}/>} clickEvent={this.handleResumeClick} />
+              <Button
+                text={<DownloadIcon download={this.state.downloading} />}
+                clickEvent={this.handleResumeClick}
+              />
             </div>
           </div>
 
