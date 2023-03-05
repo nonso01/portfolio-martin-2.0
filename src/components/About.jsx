@@ -25,6 +25,14 @@ export default class About extends Component {
   handleResumeClick(e) {
     e.preventDefault();
     this.setState({ downloading: !this.state.downloading });
+
+    const waitToCancel = setTimeout(
+      () =>
+        this.state.downloading
+          ? this.setState({ downloading: !this.state.downloading })
+          : void 0,
+      5000
+    );
     log("resume!!");
   }
   handleMouseMove() {}
@@ -69,7 +77,15 @@ export default class About extends Component {
             </div>
 
             <div className="fx-cn-row" style={{ width: "100%" }}>
-              <Text type={"span"} css={null} text="Download my resume" />
+              <Text
+                type={"span"}
+                css={null}
+                text={
+                  this.state.downloading
+                    ? "Downloading..."
+                    : "Download my resume"
+                }
+              />
               <Button
                 text={<DownloadIcon download={this.state.downloading} />}
                 clickEvent={this.handleResumeClick}
