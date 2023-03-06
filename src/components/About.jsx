@@ -60,7 +60,9 @@ export default class About extends Component {
             <Text
               type={"p"}
               css="text txt cn"
-              text={`Alright, my name is Chukwunonso Martin and i'm frontend dev just like the majority of you, with dreams of becoming a Medical Doctor, while working in an IT related field. Currently i have been working with a handfull of technologies , and as well learning each of them carefully , till am able to create satisfying softwares from it, Just like #EVAN YU. But before then let me focus on what's in front,  by building things out of the box and  doing things i luv. I have  #3 years of experience in frontend development working extensively With any thing related to  #JAVASCRIPT, when i say  (anything)  i mean the onens on that image. Along side Shell scripting , yeah am into linux stuff too, not only that i have been interested in C,  nothing more pleasant than understanding the components of a machine, hope i won't be savaged by pointers and uncountable data types.`}
+              text={
+                "Whoami .., Well am Chukwunonso Martin, a young scientist from Africa, who is obsessed with technology, and yet wants to be involved in health facilities. Yeah i just want to be helpful to my self and my env. As of this writting i have been working , with a handful of web technologies, and a great portion of it involves (JAVASCRIPT) and  it has been the case for the past 3 years, but at the end i had to be good at Solving problems, and implementing better logics. Am a physics tutor and health student by day, and a dev by night, i am into freelancing..., but it doesn't really feel like what i need. I need a team where i can grow, a team where i can collaborate with senior devs, a place where i can really put in all i have aquired. I know am ABLE, i know i CAN DO IT, GIVE ME A CHANCE!! to prove my SKILLS :)."
+              }
             />
 
             <div className="desc-info">

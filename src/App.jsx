@@ -53,6 +53,6 @@ function getRect(input = "") {
   return { t, b, h };
 }
 
-w.onscroll = function (e) {
+w.onscroll = (e) => {
   watchForScroll(scrolledElement);
 };

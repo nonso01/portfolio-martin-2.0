@@ -12,3 +12,31 @@
   // }
 
   https://official-joke-api.appspot.com/random_joke
+
+
+  // {
+//   /**
+//    * to change track using the web audio api  , you create an AudioBufferSourceNode and load
+//    * a new audio buffer in to it.
+//    *
+//    */
+
+//   const ctx = new AudioContext(),
+//     audioSource = ctx.createBufferSource();
+
+//   function loadNewTrack(url) {
+//     fetch(url)
+//       .then((res) => res.arrayBuffer())
+//       .then((arrayBuffer) => ctx.decodeAudioData(arrayBuffer))
+//       .then((audioBuffer) => {
+//         audioSource.buffer = audioBuffer;
+//         audioSource.start();
+//         log(audioBuffer);
+//       });
+//   }
+
+//   loadNewTrack(theMusic);
+//   setTimeout(() => {
+//     loadNewTrack(/**new track */);
+//   }, 3000);
+// }

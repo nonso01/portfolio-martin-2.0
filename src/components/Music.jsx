@@ -15,7 +15,7 @@ import Button, { d, log, w } from "./Button";
 import Text from "./Text";
 
 import illustrationMusicBar from "../../src/assets/images/illustration-music-bar.png";
-import theMusic from "../../jim_yosef_eclipse_ncs_release_mp3_58337.mp3";
+import theMusic from "../../Phantom Sage - MIKO [NCS Release](MP3_160K).mp3";
 
 const audioEl = d.createElement("audio"),
   audioContext = new AudioContext(),
@@ -219,29 +219,3 @@ function Aside({ hideAside, onInput }) {
   );
 }
 
-// {
-//   /**
-//    * to change track using the web audio api  , you create an AudioBufferSourceNode and load
-//    * a new audio buffer in to it.
-//    *
-//    */
-
-//   const ctx = new AudioContext(),
-//     audioSource = ctx.createBufferSource();
-
-//   function loadNewTrack(url) {
-//     fetch(url)
-//       .then((res) => res.arrayBuffer())
-//       .then((arrayBuffer) => ctx.decodeAudioData(arrayBuffer))
-//       .then((audioBuffer) => {
-//         audioSource.buffer = audioBuffer;
-//         audioSource.start();
-//         log(audioBuffer);
-//       });
-//   }
-
-//   loadNewTrack(theMusic);
-//   setTimeout(() => {
-//     loadNewTrack(/**new track */);
-//   }, 3000);
-// }
