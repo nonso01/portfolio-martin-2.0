@@ -69,7 +69,7 @@ export default class About extends Component {
                 <li>Age: {20}</li>
                 <li>
                   Nationality:
-                  <Link url={"https://wikipedia..."} data="Nigerian" />
+                  <Link url={"https://en.wikipedia.org/wiki/Nigeria"} data="Nigerian" />
                 </li>
                 <li>
                   Hobby: <Link url={"https://threejs.org"} data="2D and 3D graphics" />

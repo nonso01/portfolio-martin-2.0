@@ -93,7 +93,6 @@ w.onscroll = (e) => {
     } else {
       for (let _var in variableList) html.style.removeProperty(_var);
     }
-    log((e.timeStamp / 1e3))
   })();
 
   watchForScroll(scrolledElement);
