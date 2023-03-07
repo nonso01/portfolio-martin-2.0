@@ -79,24 +79,21 @@ export function dq(el = "html") {
 }
 
 w.onscroll = (e) => {
-  const adjusted_css_var = (function () {
-    const adjusted_top_pos_misc = getPercent(
-      w.scrollY,
-      parseInt(_htmlStyles.height)
-    );
-
+  const adjusted_css_var = (() => {
     const variableList = {
-      "--adjusted-top-pos-misc": `${adjusted_top_pos_misc * 4.5}%`,
+      "--adjusted-top-pos-misc": `${
+        getPercent(w.scrollY, parseInt(_htmlStyles.height)) * 4.2
+      }%`,
+      "--adjusted-top-pos-nav": `${w.scrollY - 19.5}px`,
     };
+
     if (w.scrollY > 150) {
-      for (let _var in variableList) {
+      for (let _var in variableList)
         html.style.setProperty(_var, variableList[_var]);
-      }
-      // dq(".navigator").classList.add("abs");
     } else {
       for (let _var in variableList) html.style.removeProperty(_var);
-      // dq(".navigator").classList.remove("abs");
     }
+    log((e.timeStamp / 1e3))
   })();
 
   watchForScroll(scrolledElement);
