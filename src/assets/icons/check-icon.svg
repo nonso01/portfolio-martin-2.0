@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="50"
+   height="50"
+   viewBox="0 0 13.229166 13.229167"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.1 r15371"
+   sodipodi:docname="check-icon.svg">
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-283.77079)">
+    <path
+       id="path5100"
+       style="opacity:1;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#ff8750;stroke-width:0.79374999;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
+       d="m 3.1738255,290.15117 2.3386084,2.90656 4.8442601,-4.57699 m 1.629804,2.05826 a 5.2916665,5.2916665 0 0 1 -5.2916666,5.29167 5.2916665,5.2916665 0 0 1 -5.2916665,-5.29167 5.2916665,5.2916665 0 0 1 5.2916665,-5.29167 5.2916665,5.2916665 0 0 1 5.2916666,5.29167 z" />
+  </g>
+</svg>

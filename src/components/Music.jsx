@@ -127,14 +127,14 @@ fetch('https://deezerdevs-deezer.p.rapidapi.com/search?q=eminem', options)
 
   return (
     <div
-      className={hide ? hide + " music-app rad-25" : "music-app rad-25"}
+      className={hide ? hide + " music-app fx-cn-col rad-25" : "music-app fx-cn-col rad-25"}
       onClick={handleClick}
       onMouseMove={handleMouseMove}
       data-martin-app="music"
       data-skew-effect="effect"
     >
       <div className="like fx-cn-row">
-        <Icon url={iconUrl.smallArrowIcon} data_x={"..."} />
+        <Icon url={iconUrl.smallArrowIcon} data_x={"music"} />
         <Text type={"span"} text={play ? "now playing :)" : "silence :("} />
         <HeartIcon />
       </div>

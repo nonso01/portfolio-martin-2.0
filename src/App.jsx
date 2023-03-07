@@ -10,6 +10,8 @@ import Panel from "./components/Panel";
 import About from "./components/About";
 
 export const scrolledElement = {};
+export const html = d.documentElement;
+export const _htmlStyles = getComputed(html);
 
 export default function App() {
   const [_width, _setWidth] = useState(() => w.innerWidth);
@@ -53,6 +55,49 @@ function getRect(input = "") {
   return { t, b, h };
 }
 
+export function getComputed(el) {
+  let elt, computed;
+  if (typeof el === "string") {
+    elt = d.querySelector(el);
+    computed = w.getComputedStyle(elt, "");
+  } else {
+    computed = w.getComputedStyle(el, "");
+  }
+  return computed;
+}
+
+export function getPercent(numerator, denominator, max = 100) {
+  let compute = Math.floor((numerator / denominator) * 100);
+  compute > 100 ? (compute = max) : compute;
+
+  return compute;
+}
+
+export function dq(el = "html") {
+  let elt = d.querySelector(el);
+  return elt;
+}
+
 w.onscroll = (e) => {
+  const adjusted_css_var = (function () {
+    const adjusted_top_pos_misc = getPercent(
+      w.scrollY,
+      parseInt(_htmlStyles.height)
+    );
+
+    const variableList = {
+      "--adjusted-top-pos-misc": `${adjusted_top_pos_misc * 4.5}%`,
+    };
+    if (w.scrollY > 150) {
+      for (let _var in variableList) {
+        html.style.setProperty(_var, variableList[_var]);
+      }
+      // dq(".navigator").classList.add("abs");
+    } else {
+      for (let _var in variableList) html.style.removeProperty(_var);
+      // dq(".navigator").classList.remove("abs");
+    }
+  })();
+
   watchForScroll(scrolledElement);
 };

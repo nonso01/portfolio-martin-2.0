@@ -29,7 +29,7 @@ export default function Panel({ hide }) {
             _c = "sans-serif";
           } else if (_a === "TF") {
             _b = "Geogia";
-            _c = "Ariel";
+            _c = "serif";
           }
           d.documentElement.style.setProperty("--font-text", _b);
           d.documentElement.style.setProperty("--font-title", _c);
@@ -130,15 +130,7 @@ export default function Panel({ hide }) {
           <Text
             type={"code"}
             text={
-              "UnexpectedError:" +
-              "\n" +
-              "{ the dev is unable" +
-              "\n" +
-              "to implement this" +
-              "\n" +
-              "feature for the" +
-              "\n" +
-              "mean time :( }"
+              "/ ** this feature is under development, and will need to be well implemented :) **/"
             }
           />
         </div>

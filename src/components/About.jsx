@@ -14,6 +14,7 @@ export default class About extends Component {
     this.state = {
       expandText: false,
       downloading: false,
+      downloaded: false,
     };
     this.handleClick = this.handleClick.bind(this);
     this.handleResumeClick = this.handleResumeClick.bind(this);
@@ -26,13 +27,11 @@ export default class About extends Component {
     e.preventDefault();
     this.setState({ downloading: !this.state.downloading });
 
-    const waitToCancel = setTimeout(
-      () =>
-        this.state.downloading
-          ? this.setState({ downloading: !this.state.downloading })
-          : void 0,
-      5000
-    );
+    const waitToCancel = setTimeout(() => {
+      if (this.state.downloading) {
+        this.setState({ downloading: false, downloaded: true });
+      }
+    }, 7500);
     log("resume!!");
   }
   handleMouseMove() {}
@@ -61,7 +60,7 @@ export default class About extends Component {
               type={"p"}
               css="text txt cn"
               text={
-                "Whoami .., Well am Chukwunonso Martin, a young scientist from Africa, who is obsessed with technology, and yet wants to be involved in health facilities. Yeah i just want to be helpful to my self and my env. As of this writting i have been working , with a handful of web technologies, and a great portion of it involves (JAVASCRIPT) and  it has been the case for the past 3 years, but at the end i had to be good at Solving problems, and implementing better logics. Am a physics tutor and health student by day, and a dev by night, i am into freelancing..., but it doesn't really feel like what i need. I need a team where i can grow, a team where i can collaborate with senior devs, a place where i can really put in all i have aquired. I know am ABLE, i know i CAN DO IT, GIVE ME A CHANCE!! to prove my SKILLS :)."
+                "Whoami .., Well am Chukwunonso Martin, a young scientist from Africa, who is obsessed with technology, and yet wants to be involved in health facilities. Yeah i just want to be helpful to my self and my env. As of this writting i have been working , with a handful of web technologies, and a great portion of it involves (JAVASCRIPT) and  it has been the case for the past 3 years, but at the end i had to be good at Solving problems, and implementing better logics. Am a physics tutor and health student by day, and a dev by night, i am into freelancing..., but it doesn't really feel like what i need. I need a team where i can grow, a team where i can collaborate with senior devs, a place where i can really put in all i have aquired. To the recruiters and employers, AM ABLE and i KNOW I CAN DO IT, just give that single CHANCE!! :)"
               }
             />
 
@@ -73,7 +72,7 @@ export default class About extends Component {
                   <Link url={"https://wikipedia..."} data="Nigerian" />
                 </li>
                 <li>
-                  Hobby: <Link url={"https://"} data="Watching Animes" />
+                  Hobby: <Link url={"https://threejs.org"} data="2D and 3D graphics" />
                 </li>
               </ul>
             </div>
@@ -85,13 +84,19 @@ export default class About extends Component {
                 text={
                   this.state.downloading
                     ? "Downloading..."
+                    : this.state.downloaded
+                    ? "Downloaded"
                     : "Download my resume"
                 }
               />
-              <Button
-                text={<DownloadIcon download={this.state.downloading} />}
-                clickEvent={this.handleResumeClick}
-              />
+              {this.state.downloaded ? (
+                <Icon url={iconUrl.checkIcon} />
+              ) : (
+                <Button
+                  text={<DownloadIcon download={this.state.downloading} />}
+                  clickEvent={this.handleResumeClick}
+                />
+              )}
             </div>
           </div>
 
