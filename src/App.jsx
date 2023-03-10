@@ -84,7 +84,7 @@ w.onscroll = (e) => {
       "--adjusted-top-pos-misc": `${
         getPercent(w.scrollY, parseInt(_htmlStyles.height)) * 4.2
       }%`,
-      "--adjusted-top-pos-nav": `${w.scrollY - getRect(".music-app").t}px`,
+      "--adjusted-top-pos-nav": `${w.scrollY - 19.5}px`,
     };
 
     if (w.scrollY > 150) {
